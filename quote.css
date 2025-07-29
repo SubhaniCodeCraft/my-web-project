@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* === NAVBAR === */
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.nav-left {
+    margin-left: 25px;
+}
+
+.nav-right {
+    margin-left: -10px;
+    margin-right: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+}
+
+.nav-right a {
+    display: inline-block;
+    padding: 14px 16px;
+    margin: 5px;
+    font-size: 1.3rem;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    color: rgb(255, 193, 7);
+}
+
+.navbar .nav-right .btn {
+    text-align: center;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    width: auto;
+    padding: 10px;
+    margin-top: -0.05rem;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* === Dropdown Menu === */
+.nav-right .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.dropbtn {
+    position: relative;
+    background: none;
+    color: white;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+    padding: 14px 16px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.dropbtn:hover {
+    color: rgb(255, 193, 7);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 1;
+    pointer-events: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin-top: 0px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #222;
+    color: rgb(255, 193, 7);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* === Logo Styling === */
+.nav-left .logo-link {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 5pt;
+}
+
+.nav-left .logo-link .logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.25s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.025);
+}
+
+.box1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.in-box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-top: 0px;
+    margin-left: 78pt;
+    margin-right: 12pt;
+}
+
+.in-box1 .row {
+    margin: 0.5px;
+    line-height: normal;
+}
+
+.in-box1 .r1 {
+    color: white;
+    margin-top: 85px;
+    height: 50px;
+    font-size: 1.60rem;
+    font-weight: 500;
+}
+
+.in-box1 .r2 {
+    color: #B0B0B0;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 85px;
+}
+
+.box2 {
+    background-color: yellowgreen;
+    display: flex;
+    width: 100%;
+    height: 85px;
+    font-family: "Roboto", sans-serif;
+}
+
+.in-box2 {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+}
+
+.box3 {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.box3 .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0px;
+    margin-top: 15pt;
+    margin-left: 78pt;
+    margin-right: 12pt;
+}
+
+.box3 .in-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 7.5px;
+}
+
+.inleft .row {
+    display: flex;
+    width: 100%;
+    justify-content: normal;
+    text-align: start;
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.inleft .r1 {
+    height: 52px;
+}
+
+.inleft .r2 {
+    height: 27.5px;
+}
+
+.inleft .r3 {
+    height: 20px;
+}
+
+.inleft .r4 {
+    display: flex;
+    direction: row;
+    width: 550px;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.inR4 {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 250px;
+    margin: 0px;
+    padding: 7.5px;
+    margin-left: 10px;
+    padding-bottom: 0px;
+}
+
+.inR4 .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: normal;
+    text-align: start;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inR4 .row .col {
+    display: flex;
+    width: 85%;
+    height: 78px;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.inR4 .row .icon {
+    display: flex;
+    width: 15%;
+    height: 78px;
+}
+
+.inR4 .row .icon img {
+    width: 78px;
+    height: 78px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+}
+
+.box3 .right {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0px;
+    padding: 5px;
+}
+
+.right .get-quote {
+    display: flex;
+    flex-direction: column;
+    width: 525px;
+}
+
+.right .get-quote .quote-r {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    min-height: 75px;
+}
+
+.right .get-quote .quote-R {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0px;
+    padding: 10px;
+}
+
+.border {
+    display: flex;
+    width: 475px;
+    align-items: center;
+    border: 2px solid rgb(68, 68, 68);
+    padding: 3px 10px;
+    letter-spacing: 0.3px;
+    border-radius: 10px;
+    background-color: transparent;
+    min-height: 50px;
+}
+
+.border input,
+.border select,
+.border textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #b4b4b4;
+}
+
+.border select[multiple] {
+    height: auto;
+    padding: 5px 0;
+}
+
+.border textarea {
+    min-height: 60px;
+    resize: none;
+}
+
+.phone-field {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-field select {
+    width: 100px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #b4b4b4;
+}
+.right .get-quote .quote {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    min-height: 60px;
+}
+.btn {
+    text-align: center;
+    background-color: rgb(255, 193, 7);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid rgb(21, 21, 21);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.service-checkboxes {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+    padding: 10px;
+    height: auto;
+    min-height: 70px;
+    row-gap: 10px;
+}
+
+.service-checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #b4b4b4;
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #666;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.service-checkboxes input[type="checkbox"] {
+    accent-color: rgb(255, 193, 7);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.service-checkboxes label:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #555;
+}
+
+.exception {
+    margin-top: 10pt;
+
+}

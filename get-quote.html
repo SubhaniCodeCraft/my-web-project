@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get Quote - INEXIA IT Solutions</title>
+    <link rel="stylesheet" href="./quote.css">
+    <link rel="icon" href="./pics/site.png" type="image/png">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="./index.html" class="logo-link">
+                <img src="./pics/crop.png" alt="INEXIA Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="./index.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="./service.html">Services ▾</a></button>
+                <div class="dropdown-content">
+                    <a href="#">WordPress Development</a>
+                    <a href="#">Front End Development</a>
+                    <a href="#">Backend Development</a>
+                    <a href="#">Flutter Development</a>
+                </div>
+            </div>
+            <a href="./about-us.html">About Us</a>
+            <a href="./get-quote.html" class="btn">GET QUOTE</a>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="in-box1">
+            <div class="row r1">
+                <h1>Let's Start To Build Something Together</h1>
+            </div>
+            <div class="row r2">
+                <p>It's hard to stay ahead of the game. We take every task seriously.
+                    Things we do flawlessly.</p>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="in-box2"></div>
+    </div>
+    <div class="box3">
+        <div class="left">
+            <div class="inleft">
+                <div class="row r1">
+                    <h1>Let's Talk</h1>
+                </div>
+                <div class="row r2">
+                    <p>We are happy to hear from you!</p>
+                </div>
+                <div class="row r3">
+                </div>
+                <div class="row r4">
+                    <div class="inR4">
+                        <div class="row">
+                            <div class="icon"><img src="./pics/loc.png" alt=""></div>
+                            <div class="col">
+                                <h2>INEXIA IT Solutions, Lahore Pakistan</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon">
+                                <img src="./pics/WA.png" alt="">
+                            </div>
+                            <div class="col">
+                                <h2>+923259420004</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon">
+                                <img src="./pics/mail.png" alt="">
+                            </div>
+                            <div class="col">
+                                <h2>
+                                    inexiapk@gmail.com</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <form id="quoteForm">
+                <div class="get-quote">
+                    <div class="quote-r">
+                        <div class="border">
+                            <input type="text" name="name" placeholder="Please enter your full name" required>
+                        </div>
+                    </div>
+                    <div class="quote-r">
+                        <div class="border">
+                            <input type="text" name="business_name" placeholder="Your business name, if applicable">
+                        </div>
+                    </div>
+                    <div class="quote-r">
+                        <div class="border">
+                            <input type="url" name="website" placeholder="Your company's website, if applicable">
+                        </div>
+                    </div>
+                    <div class="quote-r">
+                        <div class="border">
+                            <input type="email" name="email" placeholder="We will send the quote to this email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="quote-r">
+                        <div class="border phone-field">
+                            <select name="country_code" required>
+                                <option value="+92" selected>+92 (PK)</option>
+                                <option value="+1">+1 (US)</option>
+                                <option value="+44">+44 (UK)</option>
+                                <option value="+61">+61 (AUS)</option>
+                                <option value="+91">+91 (IN)</option>
+                            </select>
+                            <input type="tel" name="contact_number" placeholder="Your phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="quote-r">
+                        <div class="border service-checkboxes">
+                            <label><input type="checkbox" name="services" value="Web Development"> Web
+                                Development</label>
+                            <label><input type="checkbox" name="services" value="Flutter Development"> Flutter
+                                Development</label>
+                            <label><input type="checkbox" name="services" value="WordPress Development"> WordPress
+                                Development</label>
+                            <label><input type="checkbox" name="services" value="Graphic Design"> Graphic Design</label>
+                            <label><input type="checkbox" name="services" value="Digital Marketing"> Digital
+                                Marketing</label>
+                            <label><input type="checkbox" name="services" value="Content Writing"> Content
+                                Writing</label>
+                        </div>
+                    </div>
+
+                    <div class="quote-r">
+                        <div class="border">
+                            <textarea name="message" rows="3"
+                                placeholder="Describe your project and specific needs"></textarea>
+                        </div>
+                    </div>
+                    <div class="quote-r">
+                        <div class="border">
+                            <select name="contact_method" required>
+                                <option value="" disabled selected>How would you like us to get in touch?</option>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                                <option value="whatsapp">WhatsApp</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <button type="submit" class="btn">Get Quote</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('quoteForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const data = {};
+
+            formData.forEach((value, key) => {
+                if (data[key]) {
+                    if (Array.isArray(data[key])) {
+                        data[key].push(value);
+                    } else {
+                        data[key] = [data[key], value];
+                    }
+                } else {
+                    data[key] = value;
+                }
+            });
+
+            try {
+                const response = await fetch('http://localhost:3000/submit-quote', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.text();
+                alert(result);
+            } catch (err) {
+                console.error('Error:', err);
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

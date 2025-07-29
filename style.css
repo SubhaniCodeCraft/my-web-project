@@ -1,0 +1,1098 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* === NAVBAR === */
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.nav-left {
+    margin-left: 25px;
+}
+
+.nav-right {
+    margin-left: -10px;
+    margin-right: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+}
+
+.nav-right a {
+    display: inline-block;
+    padding: 14px 16px;
+    margin: 5px;
+    font-size: 1.3rem;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    color: rgb(255, 193, 7);
+}
+
+.navbar .nav-right .btn {
+
+    text-align: center;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    width: auto;
+    padding: 10px;
+    margin-top: -0.05rem;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* === Dropdown Menu === */
+.nav-right .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.dropbtn {
+    position: relative;
+    background: none;
+    color: white;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+    padding: 14px 16px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.dropbtn:hover {
+    color: rgb(255, 193, 7);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 1;
+    pointer-events: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin-top: 0px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #222;
+    color: rgb(255, 193, 7);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* === Logo Styling === */
+.nav-left .logo-link {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 5pt;
+}
+
+.nav-left .logo-link .logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.25s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.025);
+}
+
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* second column */
+    min-width: 220px;
+    background-color: #111;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    z-index: 2;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+.sub-dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.sub-dropdown-content a:hover {
+    background-color: #222;
+    color: rgb(255, 193, 7);
+}
+
+
+
+/* === Main Page Box Styling === */
+.Box {
+    display: flex;
+    color: white;
+    font-family: "Roboto", Sans-serif;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Box .box-a {
+    width: 50%;
+    height: 500px;
+    margin-left: 75pt;
+}
+
+.Box .box-a .a1 {
+    margin-top: 65px;
+    font-weight: 700;
+}
+
+.box-a .a1 h1 {
+    font-size: 75px;
+}
+
+.Box .box-a .a1 h2 {
+    color: silver;
+    font-size: 1.28em;
+}
+
+.Box .box-a .a2 {
+    margin-top: 40px;
+}
+
+.Box .box-a .a2 .btn {
+    text-align: center;
+    background-color: rgb(255, 193, 7);
+    color: #111;
+    width: auto;
+    height: auto;
+    padding: 24px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Box .box-b {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.Box .box-b .rotate-left {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+/* === Page II Styling === */
+.box1 {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.box1>.box-a {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* === img resize === */
+.box1 .box-a .img-container {
+    display: inline-block;
+    height: 500px;
+    width: auto;
+    padding: 50px;
+    margin: 0px;
+    margin-left: 25px;
+    justify-content: center;
+
+}
+
+.box1>.box-a>.img-container .mypic {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin: 0px;
+    /* crop to fill the div */
+}
+
+/* === Pg-II Right Side Styling === */
+.box1>.box-b {
+    background: none;
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    margin: 0px;
+}
+
+.box1>.box-b>.text-container {
+    background: none;
+    display: inline-block;
+    width: auto;
+    height: 100vh;
+    margin: 2.5px;
+    margin-top: 15pt;
+    margin-right: 20px;
+}
+
+.t1 h2 {
+    color: rgb(255, 193, 7);
+    font-size: 2rem;
+    margin-top: 0px;
+
+}
+
+.t2 h1 {
+    color: rgb(255, 193, 7);
+    font-size: 5rem;
+    margin-top: 0px;
+
+}
+
+.t4 {
+    margin-top: 50px;
+}
+
+/* === Portfolio Button Styling === */
+.t4 .btn {
+    text-align: center;
+    background-color: rgb(255, 193, 7);
+    color: black;
+    width: 150px;
+    height: max-content;
+    padding: 20px;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* === Page III Styling === */
+.box2 {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    margin-left: -5pt;
+    padding-right: 10pt;
+    width: 100%;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.in-box2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-top: 0px;
+    margin-left: 76.875pt;
+    margin-right: 11.875pt;
+}
+
+.in-box2 .row {
+    margin: 0.5px;
+    line-height: normal;
+}
+
+.in-box2 .r1 {
+    color: white;
+    margin-top: 70px;
+    height: 50px;
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.in-box2 .r2 {
+    color: #B0B0B0;
+    margin-top: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+}
+
+.box3 {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-left: -5pt;
+    padding-right: 10pt;
+}
+
+.in-box3 {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin: 0px;
+    margin-bottom: 25pt;
+    justify-content: center;
+    gap: 1px;
+}
+
+.in-box3 .outer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.in-box3 .column {
+    margin: 10px;
+    width: 215px;
+    height: 350px;
+    line-height: normal;
+    justify-content: center;
+    justify-items: center;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.in-box3 .c1 {
+    background-color: rgb(229, 57, 53);
+    color: white;
+    margin-top: 50pt;
+}
+
+.in-box3 .c2 {
+    background-color: rgb(255, 215, 0);
+    color: black;
+}
+
+.in-box3 .c3 {
+    background-color: rgb(42, 77, 153);
+    color: white;
+    margin-top: 50pt;
+}
+
+.box3 .in-box3 .outer .col-web {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0px;
+    margin-top: 87.5px;
+    padding: 35px;
+    background-color: none;
+    width: 143px;
+    height: min-content;
+
+
+}
+
+.col-web .web-dev-icon {
+    font-size: 30px;
+    /* adjust size */
+    color: #0d6efd;
+    /* blue tone for web/dev feel */
+    background-color: #f0f8ff;
+    /* subtle light background */
+    padding: 15px;
+    border-radius: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.col-web .web-dev-icon:hover {
+    color: #ffffff;
+    background-color: #0d6efd;
+    transform: scale(1.1);
+}
+
+
+.col-web .course-name {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box3 .in-box3 .outer .col-digital {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0px;
+    margin-top: 87.5px;
+    padding: 35px;
+    background-color: none;
+    width: 143px;
+    height: min-content;
+
+}
+
+.col-digital .digital-marketing-icon {
+    font-size: 30px;
+    ;
+    color: #e91e63;
+    background-color: #fff0f5;
+    padding: 15px;
+    border-radius: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.digital-marketing-icon:hover {
+    color: white;
+    background-color: #e91e63;
+    transform: scale(1.1);
+}
+
+.col-digital .course-name {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.box3 .in-box3 .outer .col-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0px;
+    margin-top: 87.5px;
+    padding: 35px;
+    background-color: none;
+    width: 143px;
+    height: min-content;
+
+}
+
+.col-content .content-writing-icon {
+    font-size: 30px;
+    color: #4caf50;
+    /* green for creativity/growth */
+    background-color: #eafaf1;
+    /* soft background */
+    padding: 15px;
+    border-radius: 25%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.content-writing-icon:hover {
+    background-color: #4caf50;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+.col-content .course-name {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* === Box 4 Styling === */
+.box4 {
+    width: 100%;
+    /* Full width of viewport */
+    padding: 0x;
+    /* Inner spacing */
+    margin: 0;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    /* Center container if needed */
+    box-sizing: border-box;
+    /* Include padding in width */
+    font-family: "Roboto", sans-serif;
+}
+
+/* Inner container that holds 4 vertical rows */
+.in-box4 {
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    gap: 1px;
+    /* Space between rows */
+    width: 100%;
+    /* Take full space of parent */
+    margin-left: 75pt;
+    margin-right: 10pt;
+}
+
+/* Individual row styles */
+.in-box4>.row {
+    background-color: black;
+    margin: 0.25px;
+    line-height: normal;
+
+}
+
+.in-box4 .r1 {
+    color: white;
+    font-size: 1.5rem;
+    height: 50px;
+    font-weight: 400;
+    margin-top: 75pt;
+    margin-bottom: 5pt;
+}
+
+.in-box4 .r2 {
+    color: rgb(143, 143, 143);
+    font-size: 1.25rem;
+    height: 27.5pt;
+    font-weight: normal;
+    margin-top: 5pt;
+    margin-bottom: 50pt;
+
+}
+
+.box5 {
+    display: flex;
+    flex-direction: column;
+    width: 954px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 60pt auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.in-box5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: max-content;
+    height: auto;
+}
+
+.box5 .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 233.5px;
+    height: 136.5px;
+    color: white;
+}
+
+.box5 .inner {
+    width: 213.5px;
+    height: 116.5px;
+}
+
+.box5 .inside {
+    width: 213.5px;
+    height: 116.5px;
+}
+
+.box5 .execute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    text-align: center;
+}
+
+.box5 .quantity {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.box5 .quantity .num {
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(255, 193, 7);
+    line-height: 1;
+}
+
+.box5 .quantity .plus {
+    font-size: 45px;
+    font-weight: 800;
+    color: rgb(255, 193, 7);
+    margin-left: 4px;
+    line-height: 1;
+}
+
+.box5 .item {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.box6 {
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-direction: column;
+    width: auto;
+    height: 545px;
+    font-weight: 400;
+    justify-content: normal;
+    color: white;
+    background-color: rgb(21, 21, 21);
+    font-family: "DM Sans", sans-serif;
+}
+
+.in-box6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.in-box6 .r-container {
+    display: block;
+    flex-direction: row;
+    line-height: normal;
+    margin: 0px;
+    justify-self: center;
+    margin-left: 75pt;
+    margin-right: 10pt;
+}
+
+.in-box6 .row {
+    display: block;
+    width: 100%;
+}
+
+.in-box6 .r1 {
+    height: 90px;
+    font-size: normal;
+}
+
+.in-box6 .r2 {
+    height: 104px;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.in-box6 .r3 {
+    height: 90px;
+    font-size: normal;
+}
+
+.in-box6 .r4 {
+    display: flex;
+    flex-direction: row;
+    height: 175px;
+    align-items: center;
+    justify-content: center;
+    font-size: normal;
+}
+
+.in-box6 .r4 .child {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 50px;
+    justify-content: space-between;
+
+}
+
+.in-box6 .r4 .child .in-r4 {
+    /*display: flex;
+    text-align: center;*/
+    align-items: center;
+    width: 250px;
+    height: 100%;
+}
+
+.in-box6 .r4 .child .in-r4 img {
+    width: 100%;
+    height: 170px;
+    background-color: rgb(21, 21, 21);
+    transition-duration: 0.5s;
+}
+
+.in-box6 .r4 .child .in-r4 img:hover {
+    width: 100%;
+    height: 170px;
+    background-color: black;
+    border-radius: 7.5%;
+}
+
+
+.in-box6 .r5 {
+    height: 70px;
+    font-size: normal;
+}
+
+.box7 {
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-direction: column;
+    width: auto;
+    height: 600px;
+    font-weight: 400;
+    justify-content: normal;
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.in-box7 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    gap: 10px;
+}
+
+.in-box7 .row {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 75pt;
+    margin-right: 10pt;
+}
+
+.in-box7 .r1 {
+    height: 140px;
+    font-size: 1.5rem;
+    margin-top: 80px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    align-items: center;
+}
+
+.in-box7 .r2 {
+    display: flex;
+    flex-direction: row;
+    height: 275px;
+    margin-top: 5pt;
+    margin-left: 30pt;
+    margin-right: 120pt;
+    align-items: center;
+}
+
+.in-box7 .r3 {
+    height: 50px;
+    font-size: normal;
+}
+
+
+.in-box7 .r2 .children {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    align-items: center;
+}
+
+.in-box7.r2.children.child {
+
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    width: 17.5rem;
+    height: auto;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+
+.in-box7 .row .r2 .children .child img {
+    margin-top: 3pt;
+    width: 16.5rem;
+    height: 200pt;
+    border-radius: 2.5%;
+}
+
+
+.Footer {
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-direction: row;
+    width: auto;
+    font-weight: 400;
+    justify-content: normal;
+    color: white;
+    margin-right: 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+.in-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    margin-bottom: 15px;
+}
+
+.in-footer .row {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 75pt;
+    margin-right: 10pt;
+
+}
+
+.in-footer .r1 {
+    display: flex;
+    direction: column;
+    height: 294px;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-top: 65px;
+    margin-right: 50px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    align-items: center;
+}
+
+.in-footer .r1 .child {
+    display: flex;
+    flex-direction: column;
+    width: 346.6px;
+    height: 274px;
+    margin: 10px;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.in-footer .r1 .child .child-box {
+    display: flex;
+    width: 326px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.in-footer .r1 .CH {
+    display: flex;
+    flex-direction: column;
+    width: 346.6px;
+    height: 274px;
+    margin: 10px;
+    padding-top: 5px;
+
+}
+
+.in-footer .r1 .CH .CH-box {
+    display: flex;
+    width: 326px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+}
+
+.in-footer .CH .CB1 {
+    height: 52px;
+    font-weight: 600;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.in-footer .r1 .CH .CB2 {
+    display: flex;
+    flex-direction: column;
+    width: 326px;
+    height: 220px;
+    margin-top: 25px;
+
+}
+
+.in-footer .r1 .CH .social {
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    height: 35px;
+    padding: 3px;
+    align-items: center;
+}
+
+.in-footer .r1 .CH .social .txt {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    font-family: "Lucida", sans-serif;
+}
+
+.in-footer .r1 .CH .social .txt:hover {
+    color: rgb(255, 193, 7);
+
+}
+
+
+
+.in-footer .child.cb1 {
+    height: 52px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.in-footer .child .cb2 {
+    height: 75px;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.in-footer .r1 .child .cb3 {
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    padding-left: 5px;
+}
+
+.in-footer .r1 .child .cb3 .social {
+    display: flex;
+    flex-direction: column;
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+    justify-content: center;
+}
+
+.in-footer .r1 .child .cb3 .social img {
+    width: 45px;
+    height: 45px;
+}
+
+.in-footer .r1 .child .cb3 .btn {
+    text-align: center;
+    background-color: rgb(255, 193, 7);
+    color: black;
+    width: auto;
+    height: auto;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgb(21, 21, 21);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+.in-footer .r2 {
+
+    height: 79.2px;
+    font-size: 1.5rem;
+    margin-right: 60px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    align-items: center;
+}
+
+.in-footer .r2 .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 79.2px;
+    font-size: 1rem;
+    font-weight: 500;
+}
